@@ -39,10 +39,13 @@ body {
 }
 
 header {
-  background: radial-gradient(circle, $text-color-bold 30%, $text-color-dark 80%);
+ #grad1 {
+  height: 600;
+  background-color: blue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, rgba(212,37,232,2), rgba(49,105,238,0.7));
+}
   padding-top: 4em;
   padding-bottom: 10em;
-  color: $body-color;
 }
 
 form {
